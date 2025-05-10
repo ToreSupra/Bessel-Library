@@ -1,3 +1,5 @@
+#pragma once
+
 // Bessel library: A C++ library with routines to evaluate Bessel functions of real or complex arguments (https://github.com/jodesarro/bessel-library)
 // MIT License Copyright (c) 2021 Jhonas Olivati de Sarro (https://github.com/jodesarro/bessel-library/blob/main/LICENSE)
 
