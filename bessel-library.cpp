@@ -1,6 +1,25 @@
 #include "bessel-library.hpp"
 
-double d1mach_(int *c__n)
+namespace bessel::slatec
+{
+	//-v------------------------------------------------------------------------
+	// TABLE OF GLOBAL CONSTANT VALUES
+	int c__0 = 0;
+	int c__1 = 1;
+	int c__2 = 2;
+	int c__4 = 4;
+	int c__5 = 5;
+	int c__9 = 9;
+	int c__14 = 14;
+	int c__15 = 15;
+	int c__16 = 16;
+	double c_b10 = .5;
+	double c_b11 = 0.;
+	// TABLE OF GLOBAL CONSTANT VALUES
+	//-^------------------------------------------------------------------------
+}
+
+double bessel::slatec::d1mach_(int *c__n)
 {
     switch(*c__n)
     {
@@ -17,7 +36,7 @@ double d1mach_(int *c__n)
     }
 }
 
-int i1mach_(int *c__n)
+int bessel::slatec::i1mach_(int *c__n)
 {
     switch(*c__n)
     {
@@ -34,7 +53,7 @@ int i1mach_(int *c__n)
     }
 }
 
-double zabs_(double *zr, double *zi)
+double bessel::slatec::zabs_(double *zr, double *zi)
 {
     /* System generated locals */
     double ret_val;
@@ -87,7 +106,7 @@ L20:
     return ret_val;
 } /* zabs_ */
 
-int zexp_(double *ar, double *ai, double *br, 
+int bessel::slatec::zexp_(double *ar, double *ai, double *br, 
 	double *bi)
 {
     /* Local variables */
@@ -119,7 +138,7 @@ int zexp_(double *ar, double *ai, double *br,
     return 0;
 } /* zexp_ */
 
-int zdiv_(double *ar, double *ai, double *br, 
+int bessel::slatec::zdiv_(double *ar, double *ai, double *br, 
 	double *bi, double *cr, double *ci)
 {
     double ca, cb, cc, cd, bm;
@@ -152,7 +171,7 @@ int zdiv_(double *ar, double *ai, double *br,
     return 0;
 } /* zdiv_ */
 
-int zsqrt_(double *ar, double *ai, double *br, 
+int bessel::slatec::zsqrt_(double *ar, double *ai, double *br, 
 	double *bi)
 {
     /* Initialized data */
@@ -237,7 +256,7 @@ L70:
     return 0;
 } /* zsqrt_ */
 
-int zlog_(double *ar, double *ai, double *br, 
+int bessel::slatec::zlog_(double *ar, double *ai, double *br, 
 	double *bi, int *ierr)
 {
     /* Initialized data */
@@ -316,7 +335,7 @@ L60:
     return 0;
 } /* zlog_ */
 
-int zs1s2_(double *zrr, double *zri, double *s1r,
+int bessel::slatec::zs1s2_(double *zrr, double *zri, double *s1r,
 	 double *s1i, double *s2r, double *s2i, int *nz, 
 	double *ascle, double *alim, int *iuf)
 {
@@ -391,7 +410,7 @@ L10:
     return 0;
 } /* zs1s2_ */
 
-int zasyi_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zasyi_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, double *rl, double *tol, double *elim, double *
 	alim)
@@ -625,7 +644,7 @@ L110:
     return 0;
 } /* zasyi_ */
 
-int zacai_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zacai_(double *zr, double *zi, double *fnu, 
 	int *kode, int *mr, int *n, double *yr, double *
 	yi, int *nz, double *rl, double *tol, double *elim, 
 	double *alim)
@@ -770,7 +789,7 @@ L80:
     return 0;
 } /* zacai_ */
 
-int zuni1_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zuni1_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, int *nlast, double *fnul, double *tol, double *
 	elim, double *alim)
@@ -1057,7 +1076,7 @@ L130:
     return 0;
 } /* zuni1_ */
 
-int zuni2_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zuni2_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, int *nlast, double *fnul, double *tol, double *
 	elim, double *alim)
@@ -1415,7 +1434,7 @@ L150:
     return 0;
 } /* zuni2_ */
 
-int zbuni_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbuni_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, int *nui, int *nlast, double *fnul, double *tol, 
 	double *elim, double *alim)
@@ -1652,7 +1671,7 @@ L90:
     return 0;
 } /* zbuni_ */
 
-int zmlri_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zmlri_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, double *tol)
 {
@@ -1925,7 +1944,7 @@ L110:
     return 0;
 } /* zmlri_ */
 
-int zmlt_(double *ar, double *ai, double *br, 
+int bessel::slatec::zmlt_(double *ar, double *ai, double *br, 
 	double *bi, double *cr, double *ci)
 {
     double ca, cb;
@@ -1955,7 +1974,7 @@ int zmlt_(double *ar, double *ai, double *br,
     return 0;
 } /* zmlt_ */
 
-double dgamln_(double *z__, int *ierr)
+double bessel::slatec::dgamln_(double *z__, int *ierr)
 {
     /* Initialized data */
     double gln[100] = { 0.,0.,.693147180559945309,
@@ -2144,7 +2163,7 @@ L70:
     return ret_val;
 } /* dgamln_ */
 
-int zseri_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zseri_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, double *tol, double *elim, double *alim)
 {
@@ -2422,7 +2441,7 @@ L190:
     return 0;
 } /* zseri_ */
 
-int zunik_(double *zrr, double *zri, double *fnu,
+int bessel::slatec::zunik_(double *zrr, double *zri, double *fnu,
 	 int *ikflg, int *ipmtr, double *tol, int *init, 
 	double *phir, double *phii, double *zeta1r, double *
 	zeta1i, double *zeta2r, double *zeta2i, double *sumr, 
@@ -2643,7 +2662,7 @@ L60:
     return 0;
 } /* zunik_ */
 
-int zunhj_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zunhj_(double *zr, double *zi, double *fnu, 
 	int *ipmtr, double *tol, double *phir, double *phii, 
 	double *argr, double *argi, double *zeta1r, double *
 	zeta1i, double *zeta2r, double *zeta2i, double *asumr, 
@@ -3344,7 +3363,7 @@ L220:
     goto L120;
 } /* zunhj_ */
 
-int zuchk_(double *yr, double *yi, int *nz, 
+int bessel::slatec::zuchk_(double *yr, double *yi, int *nz, 
 	double *ascle, double *tol)
 {
     double wi, ss, st, wr;
@@ -3390,7 +3409,7 @@ int zuchk_(double *yr, double *yi, int *nz,
     return 0;
 } /* zuchk_ */
 
-int zuoik_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zuoik_(double *zr, double *zi, double *fnu, 
 	int *kode, int *ikflg, int *n, double *yr, double 
 	*yi, int *nuf, double *tol, double *elim, double *
 	alim)
@@ -3676,7 +3695,7 @@ L210:
     return 0;
 } /* zuoik_ */
 
-int zbknu_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbknu_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *yr, double *yi, int *
 	nz, double *tol, double *elim, double *alim)
 {
@@ -4397,7 +4416,8 @@ L310:
     *nz = -2;
     return 0;
 } /* zbknu_ */
-int zrati_(double *zr, double *zi, double *fnu, 
+
+int bessel::slatec::zrati_(double *zr, double *zi, double *fnu, 
 	int *n, double *cyr, double *cyi, double *tol)
 {
     /* Initialized data */
@@ -4582,7 +4602,7 @@ L50:
     return 0;
 } /* zrati_ */
 
-int zwrsk_(double *zrr, double *zri, double *fnu,
+int bessel::slatec::zwrsk_(double *zrr, double *zri, double *fnu,
 	 int *kode, int *n, double *yr, double *yi, int *
 	nz, double *cwr, double *cwi, double *tol, double *
 	elim, double *alim)
@@ -4717,7 +4737,7 @@ L50:
     return 0;
 } /* zwrsk_ */
 
-int zbinu_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbinu_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *cyr, double *cyi, int *
 	nz, double *rl, double *fnul, double *tol, double *
 	elim, double *alim)
@@ -4899,7 +4919,7 @@ L130:
     return 0;
 } /* zbinu_ */
 
-int zshch_(double *zr, double *zi, double *cshr, 
+int bessel::slatec::zshch_(double *zr, double *zi, double *cshr, 
 	double *cshi, double *cchr, double *cchi)
 {
     /* Local variables */
@@ -4935,7 +4955,7 @@ int zshch_(double *zr, double *zi, double *cshr,
     return 0;
 } /* zshch_ */
 
-int zkscl_(double *zrr, double *zri, double *fnu,
+int bessel::slatec::zkscl_(double *zrr, double *zri, double *fnu,
 	 int *n, double *yr, double *yi, int *nz, double *
 	rzr, double *rzi, double *ascle, double *tol, double *
 	elim)
@@ -5115,7 +5135,7 @@ L45:
     return 0;
 } /* zkscl_ */
 
-int zacon_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zacon_(double *zr, double *zi, double *fnu, 
 	int *kode, int *mr, int *n, double *yr, double *
 	yi, int *nz, double *rl, double *fnul, double *tol, 
 	double *elim, double *alim)
@@ -5385,7 +5405,7 @@ L90:
     return 0;
 } /* zacon_ */
 
-int zbunk_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbunk_(double *zr, double *zi, double *fnu, 
 	int *kode, int *mr, int *n, double *yr, double *
 	yi, int *nz, double *tol, double *elim, double *alim)
 {
@@ -5439,7 +5459,7 @@ L20:
     return 0;
 } /* zbunk_ */
 
-int zunk1_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zunk1_(double *zr, double *zi, double *fnu, 
 	int *kode, int *mr, int *n, double *yr, double *
 	yi, int *nz, double *tol, double *elim, double *alim)
 {
@@ -6019,7 +6039,7 @@ L300:
     return 0;
 } /* zunk1_ */
 
-int zunk2_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zunk2_(double *zr, double *zi, double *fnu, 
 	int *kode, int *mr, int *n, double *yr, double *
 	yi, int *nz, double *tol, double *elim, double *alim)
 {
@@ -6684,7 +6704,7 @@ L320:
     return 0;
 } /* zunk2_ */
 
-int zbesj_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbesj_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *cyr, double *cyi, int *
 	nz, int *ierr)
 {
@@ -7019,7 +7039,7 @@ L260:
     return 0;
 } /* zbesj_ */
 
-int zbesy_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbesy_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *cyr, double *cyi, int *
 	nz, double *cwrkr, double *cwrki, int *ierr)
 {
@@ -7325,7 +7345,7 @@ L170:
     return 0;
 } /* zbesy_ */
 
-int zbesh_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbesh_(double *zr, double *zi, double *fnu, 
 	int *kode, int *m, int *n, double *cyr, double *
 	cyi, int *nz, int *ierr)
 {
@@ -7762,7 +7782,7 @@ L260:
     return 0;
 } /* zbesh_ */
 
-int zbesi_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbesi_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *cyr, double *cyi, int *
 	nz, int *ierr)
 {
@@ -8098,7 +8118,7 @@ L260:
     return 0;
 } /* zbesi_ */
 
-int zbesk_(double *zr, double *zi, double *fnu, 
+int bessel::slatec::zbesk_(double *zr, double *zi, double *fnu, 
 	int *kode, int *n, double *cyr, double *cyi, int *
 	nz, int *ierr)
 {
@@ -8462,7 +8482,7 @@ L260:
     return 0;
 } /* zbesk_ */
 
-int zairy_(double *zr, double *zi, int *id, 
+int bessel::slatec::zairy_(double *zr, double *zi, int *id, 
 	int *kode, double *air, double *aii, int *nz, int 
 	*ierr)
 {
@@ -8956,7 +8976,7 @@ L260:
     return 0;
 } /* zairy_ */
 
-int zbiry_(double *zr, double *zi, int *id, 
+int bessel::slatec::zbiry_(double *zr, double *zi, int *id, 
 	int *kode, double *bir, double *bii, int *ierr)
 {
     /* Initialized data */
@@ -9400,7 +9420,7 @@ L260:
     return 0;
 } /* zbiry_ */
 
-void _flag_zbesj_(const int _ierr, const int _nz)
+void bessel::_flag_zbesj_(const int _ierr, const int _nz)
 {
     // Errors of zbesj_ amos/slatec function
     switch(_ierr)
@@ -9426,7 +9446,7 @@ void _flag_zbesj_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zbesj_] Flag -> Number of components set to zero due to underflow: " << _nz << "." << std::endl;
 }
 
-void _flag_zbesy_(const int _ierr, const int _nz)
+void bessel::_flag_zbesy_(const int _ierr, const int _nz)
 {
     // Errors of zbesy_ amos/slatec function
     switch(_ierr)
@@ -9452,7 +9472,7 @@ void _flag_zbesy_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zbesy_] Flag -> Number of components set to zero due to underflow: " << _nz << "." << std::endl;
 }
 
-void _flag_zbesh_(const int _ierr, const int _nz)
+void bessel::_flag_zbesh_(const int _ierr, const int _nz)
 {
     // Errors of zbesh_ amos/slatec function
     switch(_ierr)
@@ -9478,7 +9498,7 @@ void _flag_zbesh_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zbesh_] Flag -> Number of components set to zero due to underflow: " << _nz << "." << std::endl;
 }
 
-void _flag_zbesi_(const int _ierr, const int _nz)
+void bessel::_flag_zbesi_(const int _ierr, const int _nz)
 {
     // Errors of zbesi_ amos/slatec function
     switch(_ierr)
@@ -9504,7 +9524,7 @@ void _flag_zbesi_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zbesi_] Flag -> Number of components set to zero due to underflow: " << _nz << "." << std::endl;
 }
 
-void _flag_zbesk_(const int _ierr, const int _nz)
+void bessel::_flag_zbesk_(const int _ierr, const int _nz)
 {
     // Errors of zbesk_ amos/slatec function
     switch(_ierr)
@@ -9530,7 +9550,7 @@ void _flag_zbesk_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zbesk_] Flag -> Number of components set to zero due to underflow: " << _nz << "." << std::endl;
 }
 
-void _flag_zairy_(const int _ierr, const int _nz)
+void bessel::_flag_zairy_(const int _ierr, const int _nz)
 {
     // Errors of zairy_ amos/slatec function
     switch(_ierr)
@@ -9556,7 +9576,7 @@ void _flag_zairy_(const int _ierr, const int _nz)
     if (_nz != 0) std::cerr << "[bessel::slatec::zairy_] Flag -> Result set to zero due to underflow in -pi/3 < arg(_z) < pi/3." << std::endl;
 }
 
-void _flag_zbiry_(const int _ierr)
+void bessel::_flag_zbiry_(const int _ierr)
 {
     // Errors of zbiry_ amos/slatec function
     switch(_ierr)
@@ -9582,7 +9602,7 @@ void _flag_zbiry_(const int _ierr)
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_j( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_j( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -9647,13 +9667,13 @@ std::complex<T2> cyl_j( const T1 _nu, const std::complex<T2> _z, bool _scaled = 
 }
 
 template<typename T1, typename T2>
-T2 cyl_j( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_j( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_j( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_j( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_j, bool _scaled = false, bool _flags = false )
+void bessel::cyl_j( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_j, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -9817,7 +9837,7 @@ void cyl_j( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<
 }
 
 template<typename T1, typename T2>
-void cyl_j( const T1 _nu, const int _n, T2 _z, T2 * _cyl_j, bool _scaled = false, bool _flags = false )
+void bessel::cyl_j( const T1 _nu, const int _n, T2 _z, T2 * _cyl_j, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_cylj = new std::complex<T2> [_n];
     cyl_j( _nu, _n, std::complex<T2>(_z,0.), tmp_cylj, _scaled, _flags );
@@ -9828,7 +9848,7 @@ void cyl_j( const T1 _nu, const int _n, T2 _z, T2 * _cyl_j, bool _scaled = false
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_y( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_y( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -9903,13 +9923,13 @@ std::complex<T2> cyl_y( const T1 _nu, const std::complex<T2> _z, bool _scaled = 
     }
 }
 
-T2 cyl_y( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_y( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_y( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_y( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_y, bool _scaled = false, bool _flags = false )
+void bessel::cyl_y( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_y, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -10075,7 +10095,7 @@ void cyl_y( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<
 }
 
 template<typename T1, typename T2>
-void cyl_y( const T1 _nu, const int _n, T2 _z, T2 * _cyl_y, bool _scaled = false, bool _flags = false )
+void bessel::cyl_y( const T1 _nu, const int _n, T2 _z, T2 * _cyl_y, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_cyly = new std::complex<T2> [_n];
     cyl_y( _nu, _n, std::complex<T2>(_z,0.), tmp_cyly, _scaled, _flags );
@@ -10086,7 +10106,7 @@ void cyl_y( const T1 _nu, const int _n, T2 _z, T2 * _cyl_y, bool _scaled = false
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_h1( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_h1( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -10131,13 +10151,13 @@ std::complex<T2> cyl_h1( const T1 _nu, const std::complex<T2> _z, bool _scaled =
 }
 
 template<typename T1, typename T2>
-T2 cyl_h1( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_h1( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_h1( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_h1( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_h1, bool _scaled = false, bool _flags = false )
+void bessel::cyl_h1( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_h1, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -10238,7 +10258,7 @@ void cyl_h1( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex
 }
 
 template<typename T1, typename T2>
-void cyl_h1( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h1, bool _scaled = false, bool _flags = false )
+void bessel::cyl_h1( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h1, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_cylh1 = new std::complex<T2> [_n];
     cyl_h1( _nu, _n, std::complex<T2>(_z,0.), tmp_cylh1, _scaled, _flags );
@@ -10249,7 +10269,7 @@ void cyl_h1( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h1, bool _scaled = fal
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_h2( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_h2( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -10294,13 +10314,13 @@ std::complex<T2> cyl_h2( const T1 _nu, const std::complex<T2> _z, bool _scaled =
 }
 
 template<typename T1, typename T2>
-T2 cyl_h2( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_h2( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_h2( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_h2( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_h2, bool _scaled = false, bool _flags = false )
+void bessel::cyl_h2( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_h2, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -10401,7 +10421,7 @@ void cyl_h2( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex
 }
 
 template<typename T1, typename T2>
-void cyl_h2( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h2, bool _scaled = false, bool _flags = false )
+void bessel::cyl_h2( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h2, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_cylh2 = new std::complex<T2> [_n];
     cyl_h2( _nu, _n, std::complex<T2>(_z,0.), tmp_cylh2, _scaled, _flags );
@@ -10412,7 +10432,7 @@ void cyl_h2( const T1 _nu, const int _n, T2 _z, T2 * _cyl_h2, bool _scaled = fal
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_i( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_i( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -10475,13 +10495,13 @@ std::complex<T2> cyl_i( const T1 _nu, const std::complex<T2> _z, bool _scaled = 
 }
 
 template<typename T1, typename T2>
-T2 cyl_i( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_i( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_i( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_i( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_i, bool _scaled = false, bool _flags = false )
+void bessel::cyl_i( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_i, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -10641,7 +10661,7 @@ void cyl_i( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<
 }
 
 template<typename T1, typename T2>
-void cyl_i( const T1 _nu, const int _n, T2 _z, T2 * _cyl_i, bool _scaled = false, bool _flags = false )
+void bessel::cyl_i( const T1 _nu, const int _n, T2 _z, T2 * _cyl_i, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_modi = new std::complex<T2> [_n];
     cyl_i( _nu, _n, std::complex<T2>(_z,0.), tmp_modi, _scaled, _flags );
@@ -10652,7 +10672,7 @@ void cyl_i( const T1 _nu, const int _n, T2 _z, T2 * _cyl_i, bool _scaled = false
 }
 
 template<typename T1, typename T2>
-std::complex<T2> cyl_k( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
+std::complex<T2> bessel::cyl_k( const T1 _nu, const std::complex<T2> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real order.
@@ -10695,13 +10715,13 @@ std::complex<T2> cyl_k( const T1 _nu, const std::complex<T2> _z, bool _scaled = 
 }
 
 template<typename T1, typename T2>
-T2 cyl_k( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
+T2 bessel::cyl_k( const T1 _nu, const T2 _z, bool _scaled = false, bool _flags = false )
 {
     return real( cyl_k( _nu, std::complex<T2>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1, typename T2>
-void cyl_k( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_k, bool _scaled = false, bool _flags = false )
+void bessel::cyl_k( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<T2> * _cyl_k, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _nu:     real first order to be calculated.
@@ -10806,7 +10826,7 @@ void cyl_k( const T1 _nu, const int _n, const std::complex<T2> _z, std::complex<
 }
 
 template<typename T1, typename T2>
-void cyl_k( const T1 _nu, const int _n, T2 _z, T2 * _cyl_k, bool _scaled = false, bool _flags = false )
+void bessel::cyl_k( const T1 _nu, const int _n, T2 _z, T2 * _cyl_k, bool _scaled = false, bool _flags = false )
 {
     std::complex<T2> * tmp_modk = new std::complex<T2> [_n];
     cyl_k( _nu, _n, std::complex<T2>(_z,0.), tmp_modk, _scaled, _flags );
@@ -10817,7 +10837,7 @@ void cyl_k( const T1 _nu, const int _n, T2 _z, T2 * _cyl_k, bool _scaled = false
 }
 
 template<typename T1>
-std::complex<T1> airy_ai( const std::complex<T1> _z, bool _scaled = false, bool _flags = false )
+std::complex<T1> bessel::airy_ai( const std::complex<T1> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _z:      complex argument.
@@ -10837,13 +10857,13 @@ std::complex<T1> airy_ai( const std::complex<T1> _z, bool _scaled = false, bool 
 }
 
 template<typename T1>
-T1 airy_ai( const T1 _z, bool _scaled = false, bool _flags = false )
+T1 bessel::airy_ai( const T1 _z, bool _scaled = false, bool _flags = false )
 {
     return real( airy_ai( std::complex<T1>(_z,0.), _scaled, _flags ) ) ;
 }
 
 template<typename T1>
-std::complex<T1> airy_bi( const std::complex<T1> _z, bool _scaled = false, bool _flags = false )
+std::complex<T1> bessel::airy_bi( const std::complex<T1> _z, bool _scaled = false, bool _flags = false )
 {
     // Parameters
     //  _z:      complex argument.
@@ -10862,7 +10882,7 @@ std::complex<T1> airy_bi( const std::complex<T1> _z, bool _scaled = false, bool 
 }
 
 template<typename T1>
-T1 airy_bi( const T1 _z, bool _scaled = false, bool _flags = false )
+T1 bessel::airy_bi( const T1 _z, bool _scaled = false, bool _flags = false )
 {
     return real( airy_bi( std::complex<T1>(_z,0.), _scaled, _flags ) ) ;
 }
