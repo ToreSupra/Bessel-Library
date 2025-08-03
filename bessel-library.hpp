@@ -122,15 +122,6 @@ namespace bessel::slatec
 	//-^------------------------------------------------------------------------
 
 	//-v------------------------------------------------------------------------
-	// DEPENDENCY C ROUTINES
-	inline double max(double x, double y) { return((x) > (y) ? x : y); }
-	inline double min(double x, double y) { return((x) < (y) ? x : y); }
-	inline double d_sign(double *x, double *y) { return ((*y >= 0.) ? abs(*x) : -abs(*x)); }
-	inline double pow_dd(double *x, double *y) { return pow(*x,*y); }
-	// DEPENDENCY C ROUTINES
-	//-^------------------------------------------------------------------------
-
-	//-v------------------------------------------------------------------------
 	// DEPENDENCY AMOS/SLATEC ROUTINES ORIGINALLY TRANSLATED WITH F2C
 	/* zabs.f, zexp.f, zdiv.f, zsqrt.f, zlog.f,
 		zs1s2.f, zasyi.f, zacai.f, zuni1.f,

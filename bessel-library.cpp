@@ -7,6 +7,15 @@
 // C LIBRARIES
 //-^------------------------------------------------------------------------
 
+//-v------------------------------------------------------------------------
+// DEPENDENCY C ROUTINES
+inline double max(double x, double y) { return((x) > (y) ? x : y); }
+inline double min(double x, double y) { return((x) < (y) ? x : y); }
+inline double d_sign(double *x, double *y) { return ((*y >= 0.) ? std::abs(*x) : -std::abs(*x)); }
+inline double pow_dd(double *x, double *y) { return std::pow(*x,*y); }
+// DEPENDENCY C ROUTINES
+//-^------------------------------------------------------------------------
+
 namespace bessel::slatec
 {
 	//-v------------------------------------------------------------------------
